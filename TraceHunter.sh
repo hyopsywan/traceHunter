@@ -20,7 +20,7 @@ cp /var/log/dmesg "$COLLECTED_DIR/dmesg.log"
 echo -e "\033[0;95m Coletando arquivos de configuração... \033[0m"
 cp -r /etc "$COLLECTED_DIR/etc backup"
 echo -e "\033[0;95m Listando o diretório raiz... \033[0m"
-ls -la > root_dir_list.txt
+ls -la / > "$COLLECTED_DIR/root_dir_list.txt"
 DATE_COLLECT=$(date "+%Y-%m-%d")
 HOSTNAME=$(hostname)
 OUTPUT_FILE="TraceHunter_${HOSTNAME}_${DATE_COLLECT}.tar.gz"
