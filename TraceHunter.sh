@@ -37,7 +37,7 @@ HOSTNAME=$(hostname)
 OUTPUT_FILE="TraceHunter_${HOSTNAME}_${DATE_COLLECT}.tar.gz"
 tar -czf "$OUTPUT_FILE" -C "$COLLECTED_DIR" .
 
-echo -e "\e[1;32m Fim de coleta. \e[0m"
+echo -e "\e[3;93m Fim de coleta. \e[0m"
 
 
 
